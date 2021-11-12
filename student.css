@@ -1,0 +1,109 @@
+
+Conversation opened. 1 unread message.
+
+Skip to content
+Using International Black Sea University` Mail with screen readers
+1 of 537
+es meoree
+Inbox
+
+Eka Kiria <19200163@ibsu.edu.ge>
+Attachments
+10:53 PM (1 minute ago)
+to me
+
+
+
+Disclaimer
+This email and attachments (if any), is for the exclusive and confidential use of the addressee(s) and may contain legally privileged information. Any other distribution, use or reproduction without the sender’s prior consent is unauthorized and strictly prohibited. If you have received this message in error, please notify the sender by email immediately and delete this message from your computer.
+
+IBSU accepts no liability for the content of this email, or for the consequences of any actions taken on the basis of the information provided, unless that information is subsequently confirmed in writing.
+
+Attachments area
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #264D73;
+    font-size: 2.5rem;
+}
+h2, h3 {
+    color: #444;
+    font-weight: lighter;
+}
+h3 {
+    font-size: 2.3rem;
+}
+body {
+    padding: .10rem;
+    max-width: 1000px;
+    margin: auto;
+}
+@media (min-width: 500px) {
+    body {
+        padding: 2rem;
+    }
+}
+body, input[text] {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+a {
+    cursor: pointer;
+}
+button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 2.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: red;
+    color: white;
+}
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: white;
+    background-color:  #42545C;
+}
+nav a.active {
+    background-color: black;
+    color: white;
+}
+hr {
+    margin: 1.5rem 0;
+}
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5rem;
+}
+
+input {
+    padding: .5rem;
+}
+stylestudent.css
+Displaying stylestudent.css.
