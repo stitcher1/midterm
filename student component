@@ -1,0 +1,40 @@
+<button (click)="showAddUserForm()">add student<fa-icon [icon]="faUserPlus"></fa-icon></button>
+<div *ngIf="!showUserForm">
+  <ul class="users">
+    <li *ngFor="let user of student" (click)="selectstudent(user.id)" [class.selected]="user.id == selectedstudent?.id">
+      <div>
+        <span class="badge">{{user.id}}</span>{{user.firstName + ' ' + user.lastName}}
+      </div>
+      <fa-icon (click)="deletestudent(user.id)" [icon]="faArchive"></fa-icon>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedstudent">
+  <app-student-detail [studentuniversity]="selectedstudent" (saveEvent)="save($event)"></app-employee-detail>
+</div>
+
+<div *ngIf="showUserForm">
+  <div style="margin-top: 20px">
+    <label for="user-name">name: </label>
+    <input id="user-name" [(ngModel)]="studentToAdd.firstName" placeholder="name">
+  </div>
+  <div style="margin-top: 20px">
+    <label for="student-lastName">surname: </label>
+    <input id="student-lastName" [(ngModel)]="studentToAdd.lastName" placeholder="name">
+  </div>
+  <div style="margin-top: 20px">
+    <label for="student-id">ID: </label>
+    <input id="student-id" [(ngModel)]="studentToAdd.positionName" placeholder="name">
+  </div>
+  <div style="margin-top: 20px">
+    <label for="student-password">password: </label>
+    <input id="student-password" type="number" [(ngModel)]="studentToAdd.salary" placeholder="name">
+  </div>
+   <div style="margin-top: 20px">
+    <label for="choose-subject">subject: </label>
+    <input id="choose -subject" type="number" [(ngModel)]="studentToAdd.salary" placeholder="name">
+  </div>
+  
+  <button (click)="addUser()">save</button>
+</div>
